@@ -1,1 +1,2 @@
 print("Äventyr!")
+print("Män!")
