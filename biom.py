@@ -1,6 +1,6 @@
 print("1.Mountain,N \n2.Desert,S \n3.Jungle,E \n4.Plains,W")
 
-chosebiom=int(input("\nchose a diration(nr)"))
+chosebiom=int(input("\nchose a diration(nr): "))
 if chosebiom == 1:
     biom = "mountain"
 elif chosebiom == 2:
