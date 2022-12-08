@@ -10,5 +10,5 @@ elif choosebiom == 3:
 elif choosebiom == 4:
     biom = "Plains"  
 else:
-    print("Your stupid shithead write a number 1, 2, 3 or 4!")
+    print("Your stupid shithead write 1, 2, 3 or 4!")
 print(f"You whent towards the{biom}") 
