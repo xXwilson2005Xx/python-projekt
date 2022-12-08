@@ -1,5 +1,7 @@
 from art import*
 from biom import*
+from playerstats import*
+
 print("\n\n\n\n\n\n\n\n\n\n\n\n\n")
 printtitlescreen()
 print("\n\n\n")
