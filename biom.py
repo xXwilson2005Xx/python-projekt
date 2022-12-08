@@ -9,4 +9,6 @@ elif choosebiom == 3:
     biom = "Jungle"
 elif choosebiom == 4:
     biom = "Plains"  
+else:
+    print("Your stupid shithead write 1, 2, 3 or 4!")
 print(f"You whent towards the{biom}") 
