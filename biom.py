@@ -12,4 +12,4 @@ elif choosebiom == 4:
 else:
     print("Your stupid shithead write 1, 2, 3 or 4!")
 
-print(f"You whent towards the {biom}") 
+print(f"You went towards the {biom}") 
