@@ -1,4 +1,4 @@
-print("1.Winter,S \n2.Desert,S \n3.Jungle,E \n4.Plains,W")
+print("Winter,1 \nDesert,2 \nJungle,3 \nPlains,4")
 
 biom=int(input("\nvälj en riktning:(nr)"))
 if biom == 1:
