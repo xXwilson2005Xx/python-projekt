@@ -1,5 +1,5 @@
 from art import*
-from biom import*
+
 from playerstats import*
 from health_damage import*
 
@@ -12,3 +12,5 @@ if Start_the_game == 1:
     print("Adventure Boys: The game!")
 else:
     print("Try again later!")
+
+from biom import*
