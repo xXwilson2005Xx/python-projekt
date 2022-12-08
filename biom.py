@@ -9,4 +9,4 @@ elif choosebiom == 3:
     biom = "Jungle"
 elif choosebiom == 4:
     biom = "Plains"  
-print(f"You whent thordes the{biom}") 
+print(f"You whent towards the{biom}") 
