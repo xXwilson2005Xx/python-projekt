@@ -24,3 +24,11 @@ class mobstats():
     def print_info(self):
         print(f"Name: {self.name} Healthpool: {self.hp} Strength: {self.strength} Armorclass: {self.armorclass}")
 
+PK = mobstats("PK", )
+Boston = mobstats("Boston", )
+Bromis = mobstats("Bromis", )
+Alvino = mobstats("Alvino", )
+Taxel = mobstats("Taxel", )
+Jewly = mobstats("Jewly", )
+Daffe_The_Destroyer = mobstats("Daffe_The_Destroyer", )
+Voiti_The_Fallen = mobstats("Voiti_The_Fallen", )
