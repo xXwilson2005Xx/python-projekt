@@ -10,8 +10,8 @@ class playerstats():
         print(f"Name: {self.name} Healthpool: {self.hp} Strength: {self.strength} Armorclass: {self.armorclass}")
 
 Zacke_Swiftfoot = playerstats("Zacke Swiftfoot", 50, 18, 10)
-Jacke_Bigfoot = playerstats("Jacke Slowfoot", 70, 12, 15)
-Wilson_Slowfoot = playerstats("Wilson Bigfoot", 55, 15, 12)
+Jacke_Bigfoot = playerstats("Jacke Bigfoot", 70, 12, 15)
+Wilson_Slowfoot = playerstats("Wilson Slowfoot", 55, 15, 12)
 
 class mobstats():
 

@@ -1,16 +1,21 @@
 from art import*
-
+from biom import*
 from playerstats import*
 from health_damage import*
+from Start_game import*
+from Choose_player import*
 
 print("\n\n\n\n\n\n\n\n\n\n\n\n\n")
 printtitlescreen()
 print("\n\n\n")
 
-Start_the_game = int(input("Start game! 1.YES or 2.NO: "))
-if Start_the_game == 1:
-    print("Adventure Boys: The game!")
-else:
-    print("Try again later!")
+Start_game()
 
-from biom import*
+Wilson_Slowfoot.print_info()
+Zacke_Swiftfoot.print_info()
+Jacke_Bigfoot.print_info()
+
+choose_player()
+
+
+
