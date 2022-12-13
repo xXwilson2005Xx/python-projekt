@@ -1,5 +1,5 @@
-print("1.Mountain,N \n2.Desert,S \n3.Jungle,E \n4.Plains,W")
 def biomer():
+    print("1.Mountain,N \n2.Desert,S \n3.Jungle,E \n4.Plains,W")
     choosebiom=int(input("\nChoose a diraction(nr): "))
     if choosebiom == 1:
         biom = "Mountains"
