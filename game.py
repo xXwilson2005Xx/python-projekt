@@ -24,6 +24,6 @@ Jacke_Bigfoot.print_info()
 choose_player()
 biom = biomer()
 
-print(f"A wild {biom}{PK.name} appeared") 
+print(f"A wild {biom}-{PK.name} appeared") 
 
 
