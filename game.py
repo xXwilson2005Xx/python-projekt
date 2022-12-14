@@ -11,7 +11,9 @@ print("\n\n\n")
 
 Start_game()
 
-print("")
+print(""
+
+"")
 print("1", end=". ")
 Wilson_Slowfoot.print_info()
 print("2", end=". ")
@@ -21,6 +23,7 @@ Jacke_Bigfoot.print_info()
 
 choose_player()
 biom = biomer()
+
 print(f"A wild {biom}{PK.name} appeared") 
 
 
