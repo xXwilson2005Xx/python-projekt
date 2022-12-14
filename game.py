@@ -1,4 +1,5 @@
 from art import*
+from Mob import*
 from biom import*
 from playerstats import*
 from health_damage import*
