@@ -11,8 +11,5 @@ def biomer():
         biom = "Plains"  
     else:
             print("Your stupid shithead write 1, 2, 3 or 4!")
-    return biom
 
-biomHeading = biomer()
-
-print(f"You went towards the {biomHeading}") 
+    print(f"You went towards the {biom}") 
