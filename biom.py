@@ -10,6 +10,14 @@ def biomer():
     elif choosebiom == 4:
         biom = "Plains"  
     else:
-            print("Your stupid shithead write 1, 2, 3 or 4!")
+            print("""
+            <-------------------------------------->
+            Your stupid shithead write 1, 2, 3 or 4!
+            <-------------------------------------->
+            """)
 
-    print(f"You went towards the {biom}") 
+    print(f"""
+    <-------------------------->
+    You went towards the {biom}!
+    <-------------------------->
+    """) 
