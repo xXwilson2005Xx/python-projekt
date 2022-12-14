@@ -21,3 +21,4 @@ def biomer():
     You went towards the {biom}!
     <-------------------------->
     """) 
+    return biom
