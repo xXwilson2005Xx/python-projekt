@@ -2,20 +2,14 @@ def Start_game():
     try:
         Start_the_game = int(input("Start game! 1.YES or 2.NO: "))
         if Start_the_game == 1:
-                print("""
+            print("""
         <-------------------->
         Martin Boys: The game!
         <-------------------->
         """)
         elif Start_the_game != 1:
-                print("Closing...")
-                exit()
+            print("Closing...")
+            exit()
     except ValueError:
-        print("try a number")
+        print("Try a number please")
         Start_game()
-        
-
-
-    
-
-
