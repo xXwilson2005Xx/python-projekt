@@ -5,6 +5,7 @@ from playerstats import*
 from health_damage import*
 from Start_game import*
 from Choose_player import*
+from combat import*
 
 print("\n\n\n\n\n\n\n\n\n\n\n\n\n")
 printtitlescreen()
