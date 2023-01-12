@@ -7,7 +7,7 @@ def Start_game():
         Martin Boys: The game!
         <-------------------->
         """)
-        elif Start_the_game == 2:
+        elif Start_the_game != 1:
                 print("Closing...")
                 exit()
     except ValueError:
