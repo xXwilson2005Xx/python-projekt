@@ -8,4 +8,13 @@ def mobaction():
         print("defend")
     return mobchoise
 
-mobaction()
+
+
+def hitchance():
+    import random as rand
+    hittarget = rand.randint(1, 20)
+    print(hittarget)
+    return hittarget
+
+    
+hitchance()
