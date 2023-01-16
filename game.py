@@ -21,9 +21,19 @@ print("3", end=". ")
 Jacke_Bigfoot.print_info()
 print("")
 
-choose_player()
+player = choose_player()
+player.print_info()
+
 biom = biomer()
 
-print(f"A wild {biom}-{PK.name} appeared") 
+
+
+print(f"A wild {biom}-{PK.name} appeared")
+
+player_combat()
+
+print(f"{biom}-{PK.name} chooses to...")
+mobaction(player)
+
 
 
