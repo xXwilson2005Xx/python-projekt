@@ -34,3 +34,12 @@ Taxel = mobstats("Taxel", 60, 10, 8, 1)
 Jewly = mobstats("Jewly", 60, 10, 8, 1)
 Daffe_The_Destroyer = mobstats("Daffe The Destroyer", 65, 12, 10, 1)
 Voiti_The_Fallen = mobstats("Voiti The Fallen", 65, 12, 10, 1)
+
+MOBS = [PK,
+Boston,
+Bromis,
+Alvino,
+Taxel,
+Jewly,
+Daffe_The_Destroyer,
+Voiti_The_Fallen ]
