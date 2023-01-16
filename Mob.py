@@ -1,20 +1,20 @@
 
 def mobaction():
     import random as rand
-    mobchoise = rand.randint(1, 2)
-    if mobchoise == 1:
+    mobchoice = rand.randint(1, 2)
+    if mobchoice == 1:
         print("attack")
     else:
         print("defend")
-    return mobchoise
+    return mobchoice
 
 
 
-def hitchance():
+def mob_hitchance():
     import random as rand
     hittarget = rand.randint(1, 20)
     print(hittarget)
     return hittarget
 
     
-hitchance()
+mob_hitchance()
