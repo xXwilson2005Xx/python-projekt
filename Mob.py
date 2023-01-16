@@ -9,7 +9,6 @@ def mobaction():
     return mobchoice
 
 
-
 def mob_hitchance():
     import random as rand
     hittarget = rand.randint(1, 20)
@@ -17,4 +16,3 @@ def mob_hitchance():
     return hittarget
 
     
-mob_hitchance()

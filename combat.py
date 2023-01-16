@@ -14,6 +14,5 @@ def player_hitchance():
     print(hittarget)
     return hittarget
 
-player_combat()
-player_hitchance()
+
         
