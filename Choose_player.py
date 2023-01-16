@@ -18,4 +18,4 @@ def choose_player():
                 player_health = Jacke_Bigfoot.hp
                 break
         except:
-            print("Try again")
+            print("Try again with a number\n")
