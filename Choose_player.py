@@ -1,5 +1,5 @@
 from playerstats import*
-
+player_health = 0
 def choose_player():
     global player_health
     while True:
