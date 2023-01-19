@@ -22,7 +22,6 @@ Jacke_Bigfoot.print_info()
 print("")
 
 player = choose_player()
-player.print_info()
 
 biom = biomer()
 
