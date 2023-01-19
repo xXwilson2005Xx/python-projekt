@@ -8,14 +8,14 @@ def choose_player():
             if player == 1:
                 Wilson_Slowfoot.print_info()
                 player_health = Wilson_Slowfoot.hp
-                break
+                return Wilson_Slowfoot
             elif player == 2:
                 Zacke_Swiftfoot.print_info()
                 player_health = Zacke_Swiftfoot.hp
-                break
+                return Zacke_Swiftfoot
             elif player == 3:
                 Jacke_Bigfoot.print_info()
                 player_health = Jacke_Bigfoot.hp
-                break
+                return Jacke_Bigfoot
         except:
-            print("Try again")
+            print("Try again with a number\n")

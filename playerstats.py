@@ -11,7 +11,7 @@ class playerstats():
         print(f"Name: {self.name} Healthpool: {self.hp} Strength: {self.strength} Armorclass: {self.armorclass} Level: {self.level}")
 
 Zacke_Swiftfoot = playerstats("Zacke Swiftfoot", 50, 18, 10, 1)
-Jacke_Bigfoot = playerstats("Jacke Bigfoot", 70, 12, 15, 1)
+Jacke_Bigfoot = playerstats("Jacke Bigfoot", 70, 12, 15, 1) 
 Wilson_Slowfoot = playerstats("Wilson Slowfoot", 55, 15, 12, 1)
 
 class mobstats():

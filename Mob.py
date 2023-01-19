@@ -15,6 +15,3 @@ def mobaction(player):
     else:
         print("Defend")
     return mobchoice
-
-
-mobaction()
