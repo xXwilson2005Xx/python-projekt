@@ -8,8 +8,14 @@ def Start_game():
         <-------------------->
         """)
         elif Start_the_game != 1:
-            print("Closing...")
-            exit()
+            
+            print("""
+        Too bad, you are playing this anyway!
+        
+        <-------------------->
+        Martin Boys: The game!
+        <-------------------->
+        """)
     except ValueError:
         print("Try a number please")
         Start_game()
