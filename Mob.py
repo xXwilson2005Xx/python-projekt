@@ -1,7 +1,8 @@
 from playerstats import*
 import random as rand
+from Choose_player import*
 
-def mobaction(player):
+def mobaction(player: playerstats):
     import random as rand
     mobchoice = rand.randint(1, 2)
     if mobchoice == 1:
@@ -16,11 +17,6 @@ def mobaction(player):
         print("Defend")
     return mobchoice
 
-def mob_hitchance():
-    import random as rand
-    hittarget = rand.randint(1, 20)
-    print(hittarget)
-    return hittarget
 
 class mobstats():
 
@@ -53,8 +49,8 @@ Alvino,
 Taxel,
 Jewly]
 
-Current_Mob = 0
 def Random_mob():
+
     import random as rand
     mob_spawn = rand.choice(MOBS)
     return mob_spawn
