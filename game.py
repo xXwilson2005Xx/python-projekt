@@ -26,12 +26,12 @@ player = choose_player()
 biom = biomer()
 
 
+current_mob = Random_mob()
+print(f"A wild {biom}-{current_mob.name} appeared")
 
-print(f"A wild {biom}-{Random_mob().name} appeared")
+player_combat(player, current_mob)
 
-player_combat()
-
-print(f"{biom}-{Random_mob()} chooses to...")
+print(f"{biom}-{current_mob.name} chooses to...")
 mobaction(player)
 
 
