@@ -40,6 +40,4 @@ Boston,
 Bromis,
 Alvino,
 Taxel,
-Jewly,
-Daffe_The_Destroyer,
-Voiti_The_Fallen ]
+Jewly]
