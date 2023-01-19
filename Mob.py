@@ -1,6 +1,5 @@
 from playerstats import*
 
-
 def mobaction(player):
     import random as rand
     mobchoice = rand.randint(1, 2)
@@ -15,3 +14,11 @@ def mobaction(player):
     else:
         print("Defend")
     return mobchoice
+
+def mob_hitchance():
+    import random as rand
+    hittarget = rand.randint(1, 20)
+    print(hittarget)
+    return hittarget
+
+
