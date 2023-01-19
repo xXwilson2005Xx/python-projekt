@@ -27,11 +27,11 @@ biom = biomer()
 
 
 
-print(f"A wild {biom}-{PK.name} appeared")
+print(f"A wild {biom}-{Random_mob().name} appeared")
 
 player_combat()
 
-print(f"{biom}-{PK.name} chooses to...")
+print(f"{biom}-{Random_mob()} chooses to...")
 mobaction(player)
 
 

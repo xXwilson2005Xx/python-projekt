@@ -23,6 +23,9 @@ class mobstats():
         self.armorclass = armorclass_in
         self.level = level_in
 
+    def __str__(self) -> str:
+        return self.name + " Strength: " + str(self.strength)
+
     def print_info(self):
         print(f"Name: {self.name} Healthpool: {self.hp} Strength: {self.strength} Armorclass: {self.armorclass} Level: {self.level}")
 

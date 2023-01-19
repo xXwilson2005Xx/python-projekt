@@ -23,8 +23,6 @@ def Random_mob():
 
     import random as rand
     mob_spawn = rand.choice(MOBS)
-
-    print(mob_spawn.name)
     return mob_spawn
 
 Random_mob()
