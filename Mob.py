@@ -53,7 +53,6 @@ Alvino,
 Taxel,
 Jewly]
 
-Current_Mob = 0
 def Random_mob():
     import random as rand
     mob_spawn = rand.choice(MOBS)

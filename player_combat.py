@@ -1,7 +1,7 @@
 import random as rand
 from playerstats import*
 
-def player_combat():
+def player_combat(player, mob):
     try:
         player_choice = int(input("Do you want to Attack or Defend? 1:Attack 2:Defend: "))
         if player_choice == 1:
