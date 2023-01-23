@@ -26,16 +26,25 @@ player = choose_player()
 biom = biomer()
 
 
-current_mob = Random_mob()
-print(f"A wild {biom}-{current_mob.name} appeared")
+mob = Random_mob()
+print(f"A wild {biom}-{mob.name} appeared")
 
 while True:
-    player_combat(player, current_mob)
-
-    print(f"{biom}-{current_mob.name} chooses to...")
+    player_combat(player, mob)
+    print(f"{biom}-{mob.name} chooses to...")
     mobaction(player, mob)
+    if mob.hp <= 0:
+        print("Monster DÖD!")
+        break
     if player.hp <= 0:
+        print("Du är död")
         break
-    elif mob.hp <= 0:
-        break
+
+
+
+
+
+
+print("")
+print("King e du monstret är DÖD!")    
 
