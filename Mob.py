@@ -59,7 +59,7 @@ def mobaction(player: playerstats, mob: mobstats):
         if hittarget <= player.armorclass:
             player.hp = player.hp - mob.strength
             print("Attack succeded!")
-            print(player.hp)
+            print(f'Your health is redused to:'(player.hp))
         else:
             print("Attack faild!")
     else:

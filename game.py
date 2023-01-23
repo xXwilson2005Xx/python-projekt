@@ -32,7 +32,7 @@ print(f"A wild {biom}-{current_mob.name} appeared")
 player_combat(player, current_mob)
 
 print(f"{biom}-{current_mob.name} chooses to...")
-mobaction(player,  mob)
+mobaction(player, mob)
 
 
 
