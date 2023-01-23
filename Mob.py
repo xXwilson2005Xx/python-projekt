@@ -1,22 +1,7 @@
+
 from playerstats import*
 import random as rand
 from Choose_player import*
-
-def mobaction(player: playerstats):
-    import random as rand
-    mobchoice = rand.randint(1, 2)
-    if mobchoice == 1:
-        print("Attack")
-        import random as rand
-        hittarget = rand.randint(1, 20)
-        if hittarget <= player.armorclass:
-            print("Attack succeded!")
-        else:
-            print("Attack faild!")
-    else:
-        print("Defend")
-    return mobchoice
-
 
 class mobstats():
 
@@ -28,7 +13,7 @@ class mobstats():
         self.level = level_in
 
     def __str__(self) -> str:
-        return self.name + " Strength: " + str(self.strength)
+        return self.name + " Strength" + str(self.strength)
 
     def print_info(self):
         print(f"Name: {self.name} Healthpool: {self.hp} Strength: {self.strength} Armorclass: {self.armorclass} Level: {self.level}")
@@ -49,6 +34,7 @@ Alvino,
 Taxel,
 Jewly]
 
+
 def Random_mob():
 
     import random as rand
@@ -56,4 +42,24 @@ def Random_mob():
     return mob_spawn
 
 Random_mob()
+
+mob = Random_mob()
+
+
+def mobaction(player: playerstats, mob: mobstats):
+    import random as rand
+    mobchoice = rand.randint(1, 2)
+    if mobchoice == 1:
+        print("Attack")
+        import random as rand
+        hittarget = rand.randint(1, 20)
+        if hittarget <= player.armorclass:
+            player.hp = player.hp - mob.strength
+            print("Attack succeded!")
+            print(player.hp)
+        else:
+            print("Attack faild!")
+    else:
+        print("Defend")
+    return mobchoice
 
