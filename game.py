@@ -29,10 +29,13 @@ biom = biomer()
 current_mob = Random_mob()
 print(f"A wild {biom}-{current_mob.name} appeared")
 
-player_combat(player, current_mob)
+while True:
+    player_combat(player, current_mob)
 
-print(f"{biom}-{current_mob.name} chooses to...")
-mobaction(player, mob)
-
-
+    print(f"{biom}-{current_mob.name} chooses to...")
+    mobaction(player, mob)
+    if player.hp <= 0:
+        break
+    elif mob.hp <= 0:
+        break
 

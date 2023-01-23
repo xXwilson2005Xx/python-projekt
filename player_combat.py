@@ -10,7 +10,7 @@ def player_combat(player: playerstats, mob: mobstats):
             print("Attack")
             import random as rand
             hittarget = rand.randint(1, 20)
-            if hittarget <= mob.armorclass:
+            if hittarget >= mob.armorclass:
                 mob.hp = mob.hp - player.strength
                 print(f'Your succeded, now the monster has',(mob.hp),'health')
             else:

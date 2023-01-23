@@ -56,10 +56,10 @@ def mobaction(player: playerstats, mob: mobstats):
         print("Attack")
         import random as rand
         hittarget = rand.randint(1, 20)
-        if hittarget <= player.armorclass:
+        if hittarget >= player.armorclass:
             player.hp = player.hp - mob.strength
             print("Attack succeded!")
-            print(f'Your health is redused to:'(player.hp))
+            print(f'Your health is redused to:' ,(player.hp),)
         else:
             print("Attack faild!")
     else:
