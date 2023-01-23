@@ -25,8 +25,8 @@ player = choose_player()
 
 biom = biomer()
 
-
 mob = Random_mob()
+
 print(f"A wild {biom}-{mob.name} appeared")
 
 while True:
@@ -41,10 +41,5 @@ while True:
         break
 
 
-
-
-
-
 print("")
 print("King e du monstret är DÖD!")    
-
