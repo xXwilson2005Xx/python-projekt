@@ -34,10 +34,14 @@ while True:
     print(f"{biom}-{mob.name} chooses to...")
     mobaction(player, mob)
     if mob.hp <= 0:
-        print("Monster DÖD!")
+        print("""
+        Monster DÖD!
+        """)
         break
     if player.hp <= 0:
-        print("Du är död")
+        print("""
+        Du är död
+        """)
         break
 
 
