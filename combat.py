@@ -36,6 +36,7 @@ def player_choice(player: playerstats):
         print("<------------------------------------------------------------->")
         print("\n You chossed to Attack! \n")
     elif playerchoice == 2:
+        print("<------------------------------------------------------------->")
         print("\n You chossed to Defend! \n")
         player.armorclass = player.armorclass + 1
     return playerchoice
