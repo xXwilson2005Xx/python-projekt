@@ -48,10 +48,18 @@ Random_mob()
 
 mob = Random_mob()
 
-
-def mobaction(player: playerstats, mob: mobstats):
+def Mob_choice(mob: mobstats):
     import random as rand
     mobchoice = rand.randint(1, 2)
+    if mobchoice == 1:
+        print("")
+    elif mobchoice == 2:
+        print("Defend")
+        mob.armorclass = mob.armorclass + 1
+    return mobchoice
+
+
+def mobaction(player: playerstats, mob: mobstats, mobchoice):
     if mobchoice == 1:
         print("Attack")
         import random as rand
@@ -62,7 +70,34 @@ def mobaction(player: playerstats, mob: mobstats):
             print(f'Your health is redused to:' ,(player.hp),)
         else:
             print("Attack faild!")
-    else:
-        print("Defend")
+    elif mobchoice == 2:
+        print("")
     return mobchoice
 
+
+def player_choice(player: playerstats):
+    playerchoice = int(input("Do you want to Attack or Defend? 1:Attack 2:Defend: "))
+    if playerchoice == 1:
+        print("")
+    elif playerchoice == 2:
+        print("Defend!")
+        player.armorclass = player.armorclass + 1
+    return playerchoice
+
+def player_combat(player: playerstats, mob: mobstats, playerchoice):
+    try:
+        if playerchoice == 1:
+            print("Attack")
+            import random as rand
+            hittarget = rand.randint(1, 20)
+            if hittarget >= mob.armorclass:
+                mob.hp = mob.hp - player.strength
+                print(f'Your attack succeded, now the monster has',(mob.hp),'health')
+            else:
+                print("Attack faild!")
+        else:
+            print("Defend")
+        return playerchoice
+    except ValueError:
+        print("Try a number please")
+        player_combat()
