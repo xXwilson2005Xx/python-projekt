@@ -6,10 +6,10 @@ def Mob_choice(mob: mobstats):
     import random as rand
     mobchoice = rand.randint(1, 2)
     if mobchoice == 1:
-        print("\n Monster chossed to Attack! \n")
+        print("\n Attack! \n")
         print("<------------------------------------------------------------->")
     elif mobchoice == 2:
-        print("\n Monster chossed to Defend! \n")
+        print("\n Defend! \n")
         print("<------------------------------------------------------------->")
         mob.armorclass = mob.armorclass + 1
     return mobchoice
@@ -40,7 +40,7 @@ def player_choice(player: playerstats):
         player.armorclass = player.armorclass + 1
     return playerchoice
 
-def player_combat(player: playerstats, mob: mobstats, playerchoice):
+def player_combat_mob(player: playerstats, mob: mobstats, playerchoice):
     try:
         if playerchoice == 1:
             print(" Your Attack!")
@@ -48,7 +48,7 @@ def player_combat(player: playerstats, mob: mobstats, playerchoice):
             hittarget = rand.randint(1, 20)
             if hittarget >= mob.armorclass:
                 mob.hp = mob.hp - player.strength
-                print(f' Your attack succeded, now the monster has',(mob.hp),'health \n') 
+                print(f' Your attack succeded, now The Monster has',(mob.hp),'health \n') 
                 print("<------------------------------------------------------------->")
             else:
                 print(" Attack faild! \n")
@@ -58,8 +58,52 @@ def player_combat(player: playerstats, mob: mobstats, playerchoice):
         return playerchoice
     except ValueError:
         print(" Try a number please \n")
-        player_combat()
+        player_combat_mob()
+
+def player_combat_boss(player: playerstats, boss: Boss_stats, playerchoice):
+    try:
+        if playerchoice == 1:
+            print(" Your Attack!")
+            import random as rand
+            hittarget = rand.randint(1, 20)
+            if hittarget >= boss.armorclass:
+                boss.hp = boss.hp - player.strength
+                print(f' Your attack succeded, now The Boss has',(boss.hp),'health \n') 
+                print("<------------------------------------------------------------->")
+            else:
+                print(" Attack faild! \n")
+                print("<------------------------------------------------------------->")
+        else:
+            print("<------------------------------------------------------------->")
+        return playerchoice
+    except ValueError:
+        print(" Try a number please \n")
+        player_combat_boss()
+
+def boss_choice(boss: Boss_stats):
+    import random as rand
+    bosschoice = rand.randint(1, 2)
+    if bosschoice == 1:
+        print("\n The Boss chossed to Attack! \n")
+        print("<------------------------------------------------------------->")
+    elif bosschoice == 2:
+        print("\n The Boss chossed to Defend! \n")
+        print("<------------------------------------------------------------->")
+        boss.armorclass = boss.armorclass + 1
+    return bosschoice
 
 
-
+def bossaction(player: playerstats, boss: Boss_stats, bosschoice):
+    if bosschoice == 1:
+        print(" Boss Attack!")
+        import random as rand
+        hittarget = rand.randint(1, 20)
+        if hittarget >= player.armorclass:
+            player.hp = player.hp - boss.strength
+            print(f' Boss Attack succeded! Your health is redused to:' ,(player.hp),'health \n')
+        else:
+            print(" Attack faild! \n")
+    elif bosschoice == 2:
+        print("")
+    return bosschoice
         
