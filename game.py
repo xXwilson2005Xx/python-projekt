@@ -58,6 +58,8 @@ while True:
 
 print("")
 print("King e du monstret är DÖD! \n")  
+mob_drop_item()
+print("--------------------------")
 openInventory()
 # mob = Random_mob()
 # # print(f"""

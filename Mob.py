@@ -60,3 +60,16 @@ def Random_boss():
     boss_spawn = rand.choice(BOSS)
     return boss_spawn
 
+def mob_drop_item():
+    for item in Inventory:
+        print(item.item_name)
+    print("1 to take potion: 2 to leave potion")
+    take_Item = int(input("-> "))
+    if take_Item == 1:
+        Inventory.append(healthPotion)
+    
+        for item in Inventory:
+            print(item.item_name)
+
+    elif take_Item == 2:
+        pass
