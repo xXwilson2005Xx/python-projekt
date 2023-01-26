@@ -132,9 +132,9 @@ for mobstats in MOBS:
             Du är död
             """)
             break
-        mob_drop_item()
-        print("--------------------------")
-        openInventory(player)
+    mob_drop_item()
+    print("--------------------------")
+    openInventory(player)
 
 #     print("")
 #     print("King e du monstret är DÖD! \n") 
