@@ -243,4 +243,6 @@ while True:
 
 
 
-print("Game over!")
+print("Game over")
+
+bosschoice = boss_choice(boss)
