@@ -32,9 +32,8 @@ Inventory = [healthPotion]
 
 
 
-def openInventory():
-    global player_health
-    print(player_health)
+def openInventory(player: playerstats):
+    print(player.hp)
     for item in Inventory:
         print(item.item_name)
 
@@ -50,13 +49,13 @@ def openInventory():
 
         item_to_use = Inventory[item_to_take]
 
-        player_health += item_to_use.healing_power
+        player.hp += item_to_use.healing_power
 
         Inventory.pop(item_to_take)
 
         for item in Inventory:
             print(item.item_name)
-        print(player_health)
+        print(player.hp)
         
     elif inventory_choice == 2:
         pass

@@ -25,190 +25,224 @@ player = choose_player()
 
 biom = biomer()
 
-mob = Random_mob()
-
-old_mob_armorclass = mob.armorclass
-old_player_armorclass = player.armorclass
-
-print(f"""
-<------------------------------->
-A wild {biom}-{mob.name} appeared
-<------------------------------->
-""")
-
 while True:
-    player.armorclass = old_player_armorclass
-    mob.armorclass = old_mob_armorclass
-    playerchoice = player_choice(player)
-    print(f"{biom}-{mob.name} chooses to...")
-    mobchoice = Mob_choice(mob)
-    mobaction(player, mob, mobchoice)
-    player_combat_mob(player, mob, playerchoice)
-    if mob.hp <= 0:
-        print("""
-        Monster DÖD!
-        """)
-        break
+    mob = Random_mob()
+    old_mob_armorclass = mob.armorclass
+    old_player_armorclass = player.armorclass
+
+    print(f"""
+    <------------------------------->
+    A wild {biom}-{mob.name} appeared
+    <------------------------------->
+    """)
+
+    while True:
+        player.armorclass = old_player_armorclass
+        mob.armorclass = old_mob_armorclass
+        playerchoice = player_choice(player)
+        print(f"{biom}-{mob.name} chooses to...")
+        mobchoice = Mob_choice(mob)
+        mobaction(player, mob, mobchoice)
+        player_combat_mob(player, mob, playerchoice)
+        if mob.hp <= 0:
+            print("""
+            Monster DÖD!
+            """)
+            break
+        if player.hp <= 0:
+            print("""
+            Du är död
+            """)
+            break
+
+
+    print("")
+    print("King e du monstret är DÖD! \n")  
+    mob_drop_item()
+    print("--------------------------")
+    openInventory(player)
+    mob = Random_mob()
+    print(f"""
+    <------------------------------->
+    A wild {biom}-{mob.name} appeared
+    <------------------------------->
+    """)
+
+    while True:
+        player.armorclass = old_player_armorclass
+        mob.armorclass = old_mob_armorclass
+        playerchoice = player_choice(player)
+        print(f"{biom}-{mob.name} chooses to...")
+        mobchoice = Mob_choice(mob)
+        mobaction(player, mob, mobchoice)
+        player_combat_mob(player, mob, playerchoice)
+        if mob.hp <= 0:
+            print("""
+            Monster DÖD!
+            """)
+            break
+        if player.hp <= 0:
+            print("""
+            Du är död
+            """)
+            break
+
+
+    print("")
+    print("King e du monstret är DÖD! \n") 
+
+    mob_drop_item()
+    print("--------------------------")
+    openInventory(player)
+
+    mob = Random_mob()
+
+    print(f"""
+    <------------------------------->
+    A wild {biom}-{mob.name} appeared
+    <------------------------------->
+    """)
+
+    while True:
+        player.armorclass = old_player_armorclass
+        mob.armorclass = old_mob_armorclass
+        playerchoice = player_choice(player)
+        print(f"{biom}-{mob.name} chooses to...")
+        mobchoice = Mob_choice(mob)
+        mobaction(player, mob, mobchoice)
+        player_combat_mob(player, mob, playerchoice)
+        if mob.hp <= 0:
+            print("""
+            Monster DÖD!
+            """)
+            break
+        if player.hp <= 0:
+            print("""
+            Du är död
+            """)
+            break
+        
+
+    print("")
+    print("King e du monstret är DÖD! \n") 
+
+    mob_drop_item()
+    print("--------------------------")
+    openInventory(player)
+
+    mob = Random_mob()
+
+    print(f"""
+    <------------------------------->
+    A wild {biom}-{mob.name} appeared
+    <------------------------------->
+    """)
+
+    while True:
+        player.armorclass = old_player_armorclass
+        mob.armorclass = old_mob_armorclass
+        playerchoice = player_choice(player)
+        print(f"{biom}-{mob.name} chooses to...")
+        mobchoice = Mob_choice(mob)
+        mobaction(player, mob, mobchoice)
+        player_combat_mob(player, mob, playerchoice)
+        if mob.hp <= 0:
+            print("""
+            Monster DÖD!
+            """)
+            break
+        if player.hp <= 0:
+            print("""
+            Du är död
+            """)
+            break
+        
+
+    print("")
+    print("King e du monstret är DÖD! \n") 
+
+    mob_drop_item()
+    print("--------------------------")
+    openInventory(player)
+
+    mob = Random_mob()
+
+    print(f"""
+    <------------------------------->
+    A wild {biom}-{mob.name} appeared
+    <------------------------------->
+    """)
+
+    while True:
+        player.armorclass = old_player_armorclass
+        mob.armorclass = old_mob_armorclass
+        playerchoice = player_choice(player)
+        print(f"{biom}-{mob.name} chooses to...")
+        mobchoice = Mob_choice(mob)
+        mobaction(player, mob, mobchoice)
+        player_combat_mob(player, mob, playerchoice)
+        if mob.hp <= 0:
+            print("""
+            Monster DÖD!
+            """)
+            break
+        if player.hp <= 0:
+            print("""
+            Du är död
+            """)
+            break
+        
+
+
+    print("")
+    print("King e du monstret är DÖD! \n")
+
+    mob_drop_item()
+    print("--------------------------")
+    openInventory(player)
+
+    boss = Random_boss()
+    old_boss_armorclass = boss.armorclass
+
+    print(f"""
+    <------------------------------------------->
+    A wild {biom}-{boss.name} appeared
+    <------------------------------------------->
+    """)
+
+    while True:
+        player.armorclass = old_player_armorclass
+        boss.armorclass = old_boss_armorclass
+        playerchoice = player_choice(player)
+        print(f"{biom}-{boss.name} chooses to...")
+        bosschoice = boss_choice(boss)
+        bossaction(player, boss, bosschoice)
+        player_combat_boss(player, boss, playerchoice)
+        if boss.hp <= 0:
+            print("""
+            Boss DÖD!
+            """)
+            break
+        if player.hp <= 0:
+            print("""
+            Du är död
+            """)
+            break
+        
+
+
+    print("")
+    print("King e du monstret är DÖD!") 
+    mob_drop_item()
+    print("--------------------------")
+    openInventory(player)
+
     if player.hp <= 0:
-        print("""
-        Du är död
-        """)
-        break
+            print("""
+            Du är död
+            """)
+            break
 
 
-print("")
-print("King e du monstret är DÖD! \n")  
-mob_drop_item()
-print("--------------------------")
-openInventory()
-# mob = Random_mob()
-# # print(f"""
-# <------------------------------->
-# A wild {biom}-{mob.name} appeared
-# <------------------------------->
-# """)
 
-# while True:
-#     player.armorclass = old_player_armorclass
-#     mob.armorclass = old_mob_armorclass
-#     playerchoice = player_choice(player)
-#     print(f"{biom}-{mob.name} chooses to...")
-#     mobchoice = Mob_choice(mob)
-#     mobaction(player, mob, mobchoice)
-#     player_combat_mob(player, mob, playerchoice)
-#     if mob.hp <= 0:
-#         print("""
-#         Monster DÖD!
-#         """)
-#         break
-#     if player.hp <= 0:
-#         print("""
-#         Du är död
-#         """)
-#         break
-
-
-# print("")
-# print("King e du monstret är DÖD! \n") 
-
-# mob = Random_mob()
-# # print(f"""
-# <------------------------------->
-# A wild {biom}-{mob.name} appeared
-# <------------------------------->
-# """)
-
-# while True:
-#     player.armorclass = old_player_armorclass
-#     mob.armorclass = old_mob_armorclass
-#     playerchoice = player_choice(player)
-#     print(f"{biom}-{mob.name} chooses to...")
-#     mobchoice = Mob_choice(mob)
-#     mobaction(player, mob, mobchoice)
-#     player_combat_mob(player, mob, playerchoice)
-#     if mob.hp <= 0:
-#         print("""
-#         Monster DÖD!
-#         """)
-#         break
-#     if player.hp <= 0:
-#         print("""
-#         Du är död
-#         """)
-#         break
-
-
-# print("")
-# print("King e du monstret är DÖD! \n") 
-
-# mob = Random_mob()
-# # print(f"""
-# <------------------------------->
-# A wild {biom}-{mob.name} appeared
-# <------------------------------->
-# """)
-
-# while True:
-#     player.armorclass = old_player_armorclass
-#     mob.armorclass = old_mob_armorclass
-#     playerchoice = player_choice(player)
-#     print(f"{biom}-{mob.name} chooses to...")
-#     mobchoice = Mob_choice(mob)
-#     mobaction(player, mob, mobchoice)
-#     player_combat_mob(player, mob, playerchoice)
-#     if mob.hp <= 0:
-#         print("""
-#         Monster DÖD!
-#         """)
-#         break
-#     if player.hp <= 0:
-#         print("""
-#         Du är död
-#         """)
-#         break
-
-
-# print("")
-# print("King e du monstret är DÖD! \n") 
-
-# mob = Random_mob()
-# # print(f"""
-# <------------------------------->
-# A wild {biom}-{mob.name} appeared
-# <------------------------------->
-# """)
-
-# while True:
-#     player.armorclass = old_player_armorclass
-#     mob.armorclass = old_mob_armorclass
-#     playerchoice = player_choice(player)
-#     print(f"{biom}-{mob.name} chooses to...")
-#     mobchoice = Mob_choice(mob)
-#     mobaction(player, mob, mobchoice)
-#     player_combat_mob(player, mob, playerchoice)
-#     if mob.hp <= 0:
-#         print("""
-#         Monster DÖD!
-#         """)
-#         break
-#     if player.hp <= 0:
-#         print("""
-#         Du är död
-#         """)
-#         break
-
-
-# print("")
-# print("King e du monstret är DÖD! \n")
-
-boss = Random_boss()
-old_boss_armorclass = boss.armorclass
-print(f"""
-<------------------------------------------->
-A wild {biom}-{boss.name} appeared
-<------------------------------------------->
-""")
-
-while True:
-    player.armorclass = old_player_armorclass
-    boss.armorclass = old_boss_armorclass
-    playerchoice = player_choice(player)
-    print(f"{biom}-{boss.name} chooses to...")
-    bosschoice = boss_choice(boss)
-    bossaction(player, boss, bosschoice)
-    player_combat_boss(player, boss, playerchoice)
-    if boss.hp <= 0:
-        print("""
-        Boss DÖD!
-        """)
-        break
-    if player.hp <= 0:
-        print("""
-        Du är död
-        """)
-        break
-
-
-print("")
-print("King e du monstret är DÖD!") 
-
+print("Game over!")
