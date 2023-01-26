@@ -228,9 +228,7 @@ while True:
             Du är död
             """)
             break
-        
-
-
+            
     print("")
     print("King e du monstret är DÖD!") 
     mob_drop_item()
