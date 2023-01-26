@@ -26,6 +26,9 @@ player = choose_player()
 biom = biomer()
 
 mob = Random_mob()
+
+old_player_armorclass = player.armorclass
+old_mob_armorclass = mob.armorclass
 # while True:
 #     mob = Random_mob()
 #     old_mob_armorclass = mob.armorclass
@@ -104,12 +107,12 @@ mob = Random_mob()
 #     <------------------------------->
 #     """)
 
-for mobstats in MOBS
-print(f"""
-#     <------------------------------->
-#     A wild {biom}-{mob.name} appeared
-#     <------------------------------->
-#     """)
+for mobstats in MOBS:
+    print(f"""
+    #     <------------------------------->
+    #     A wild {biom}-{mob.name} appeared
+    #     <------------------------------->
+    #     """)
     while True:
         player.armorclass = old_player_armorclass
         mob.armorclass = old_mob_armorclass
@@ -130,8 +133,8 @@ print(f"""
             break
         
 
-    print("")
-    print("King e du monstret är DÖD! \n") 
+#     print("")
+#     print("King e du monstret är DÖD! \n") 
 
 #     mob_drop_item()
 #     print("--------------------------")
