@@ -1,4 +1,10 @@
 from playerstats import*
+
+class Item:
+    def __init__(self, item_name, healing_power):
+        self.item_name = item_name
+        self.healing_power = healing_power
+
 player_health = 0
 def choose_player():
     global player_health
@@ -19,3 +25,32 @@ def choose_player():
                 return Jacke_Bigfoot
         except:
             print("Try again with a number\n")
+
+healthPotion = Item("Health Potion", 10)
+
+Inventory = [healthPotion]
+
+
+
+def openInventory():
+    for item in Inventory:
+        print(item.item_name)
+
+    print("1: use item, 2: exit inventory")
+
+    inventory_choice = int(input("-> "))
+
+    if inventory_choice == 1:
+        print("Choose item to use, starting wit 1..")
+
+        item_to_take = int(input("-> "))
+
+        item_to_use = Inventory[item_to_take]
+
+        player_health += item_to_use.healing_power
+        
+    elif inventory_choice == 2:
+        pass
+    
+
+        
