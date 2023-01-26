@@ -5,38 +5,36 @@ from Choose_player import*
 
 class mobstats():
 
-    def __init__(self, name_in, hp_in, strength_in, armorclass_in, level_in):
+    def __init__(self, name_in, hp_in, strength_in, armorclass_in):
         self.name = name_in
         self.hp = hp_in
         self.strength = strength_in
         self.armorclass = armorclass_in
-        self.level = level_in
 
     def __str__(self) -> str:
         return self.name + " Strength: " + str(self.strength)
 
     def print_info(self):
-        print(f"Name: {self.name} Healthpool: {self.hp} Strength: {self.strength} Armorclass: {self.armorclass} Level: {self.level}")
+        print(f"Name: {self.name} Healthpool: {self.hp} Strength: {self.strength} Armorclass: {self.armorclass}")
 
 class Boss_stats():
-    def __init__(self, name_in, hp_in, strength_in, armorclass_in, level_in):
+    def __init__(self, name_in, hp_in, strength_in, armorclass_in):
         self.name = name_in
         self.hp = hp_in
         self.strength = strength_in
         self.armorclass = armorclass_in
-        self.level = level_in
     
     def print_info(self):
-        print(f"Name: {self.name} Healthpool: {self.hp} Strength: {self.strength} Armorclass: {self.armorclass} Level: {self.level}")
+        print(f"Name: {self.name} Healthpool: {self.hp} Strength: {self.strength} Armorclass: {self.armorclass}")
 
-PK = mobstats("PK", 60, 10, 8, 1)
-Boston = mobstats("Boston", 60, 10, 8, 1)
-Bromis = mobstats("Bromis", 60, 10, 8, 1)
-Alvino = mobstats("Alvino", 60, 10, 8, 1)
-Taxel = mobstats("Taxel", 60, 10, 8, 1)
-Jewly = mobstats("Jewly", 60, 10, 8, 1)
-Daffe_The_Destroyer = Boss_stats("Daffe The Destroyer", 65, 12, 10, 1)
-Voiti_The_Fallen = Boss_stats("Voiti The Fallen", 65, 12, 10, 1)
+PK = mobstats("PK", 55, 10, 9)
+Boston = mobstats("Boston", 20, 20, 5)
+Bromis = mobstats("Bromis", 45, 9, 9)
+Alvino = mobstats("Alvino", 55, 10, 9)
+Taxel = mobstats("Taxel", 40, 12, 8)
+Jewly = mobstats("Jewly", 60, 9, 10)
+Daffe_The_Destroyer = Boss_stats("Daffe The Destroyer", 65, 14, 12)
+Voiti_The_Fallen = Boss_stats("Voiti The Fallen", 75, 11, 14)
 
 MOBS = [PK,
 Boston,
