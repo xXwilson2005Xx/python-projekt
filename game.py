@@ -108,6 +108,7 @@ old_mob_armorclass = mob.armorclass
 #     """)
 
 for mobstats in MOBS:
+    mob = Random_mob()
     print(f"""
     #     <------------------------------->
     #     A wild {biom}-{mob.name} appeared
