@@ -29,7 +29,7 @@ def choose_player():
         except:
             print("Try again with a number\n")
 
-healthPotion = Item("Health Potion", 55)
+healthPotion = Item("Health Potion", 30)
 
 Inventory = [healthPotion]
 
