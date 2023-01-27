@@ -34,19 +34,15 @@ def mobaction(player: playerstats, mob: mobstats, mobchoice):
 
 # player_choice är funktionen som låter oss bestämma om vi vill attackera eller försvara
 def player_choice(player: playerstats):
-    try:
-        playerchoice = int(input("Do you want to Attack or Defend? 1:Attack 2:Defend: "))
-        if playerchoice == 1:
-            print("<------------------------------------------------------------->")
-            print("\n You chossed to Attack! \n")
-        elif playerchoice == 2:
-            print("<------------------------------------------------------------->")
-            print("\n You chossed to Defend! \n")
-            player.armorclass = player.armorclass + 1
-        return playerchoice
-    except ValueError:
-        print("Try a number please")
-        player_choice()
+    playerchoice = int(input("Do you want to Attack or Defend? 1:Attack 2:Defend: "))
+    if playerchoice == 1:
+        print("<------------------------------------------------------------->")
+        print("\n You chossed to Attack! \n")
+    elif playerchoice == 2:
+        print("<------------------------------------------------------------->")
+        print("\n You chossed to Defend! \n")
+        player.armorclass = player.armorclass + 1
+    return playerchoice
 
 # player_comabat_mob utför skadan på monstret om playern valde att attackera
 def player_combat_mob(player: playerstats, mob: mobstats, playerchoice):
