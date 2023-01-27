@@ -27,14 +27,15 @@ class Boss_stats():
     def print_info(self):
         print(f"Name: {self.name} Healthpool: {self.hp} Strength: {self.strength} Armorclass: {self.armorclass}")
 
-PK = mobstats("PK", 55, 10, 9)
-Boston = mobstats("Boston", 20, 20, 5)
+PK = mobstats("PK", 50, 10, 9)
+Boston = mobstats("Boston", 15, 20, 5)
 Bromis = mobstats("Bromis", 45, 9, 9)
-Alvino = mobstats("Alvino", 55, 10, 9)
+Alvino = mobstats("Alvino", 50, 10, 9)
 Taxel = mobstats("Taxel", 40, 12, 8)
-Jewly = mobstats("Jewly", 60, 9, 10)
+Jewly = mobstats("Jewly", 55, 9, 10)
 Daffe_The_Destroyer = Boss_stats("Daffe The Destroyer", 65, 14, 12)
-Voiti_The_Fallen = Boss_stats("Voiti The Fallen", 75, 10, 14)
+Voiti_The_Fallen = Boss_stats("Voiti The Fallen", 75, 11, 14)
+Ron_The_Brittle = Boss_stats("Ron The Brittle", 1, 30, 18)
 
 MOBS = [PK,
 Boston,
@@ -44,7 +45,7 @@ Taxel,
 Jewly]
 
 BOSS = [Daffe_The_Destroyer,
-Voiti_The_Fallen,]
+Voiti_The_Fallen, Ron_The_Brittle]
 
 def Random_mob():
     import random as rand

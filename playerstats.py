@@ -9,6 +9,6 @@ class playerstats():
     def print_info(self):
         print(f"Name: {self.name} Healthpool: {self.hp} Strength: {self.strength} Armorclass: {self.armorclass}")
 
-Zacke_Swiftfoot = playerstats("Zacke Swiftfoot", 50, 50, 18, 10)
-Jacke_Bigfoot = playerstats("Jacke Bigfoot", 70, 70, 12, 15) 
-Wilson_Slowfoot = playerstats("Wilson Slowfoot", 55, 55, 15, 12)
+Zacke_Swiftfoot = playerstats("Zacke Swiftfoot", 50, 50, 18, 12)
+Jacke_Bigfoot = playerstats("Jacke Bigfoot", 70, 70, 12, 16) 
+Wilson_Slowfoot = playerstats("Wilson Slowfoot", 55, 55, 15, 14)
