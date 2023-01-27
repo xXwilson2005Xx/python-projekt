@@ -58,11 +58,11 @@ while True:
             if player.hp <= 0:
                 print("""
                 <--------------------->
-                    Du är död
-                    GAME OVER!
+                      Du är död!
+                      GAME OVER!
                 <--------------------->
-                The Game is made by
-                PK, Wilson and Zacke!
+                  The Game is made by
+                 PK, Wilson and Zacke!
                 <--------------------->
                 """)
                 quit()
@@ -89,8 +89,8 @@ while True:
         if player.hp <= 0:
             print("""
             <--------->
-            Du är död
-            GAME OVER!
+             Du är död
+             GAME OVER!
             <--------->
             """)
             quit()
