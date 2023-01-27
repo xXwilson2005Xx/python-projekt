@@ -15,11 +15,11 @@ def choose_player():
                 print("")
                 Wilson_Slowfoot.print_info()
                 print("""
-                <----------------------------------------------------------------------------->
-                 This knight, a modest knight of calm temper and reasonable strength. 
-                 He has trained all his life to serve under Lord Martin. 
-                 He would rather die standing in the light than live kneeling in the darkness.
-                <----------------------------------------------------------------------------->
+<----------------------------------------------------------------------------->
+ This knight, a modest knight of calm temper and reasonable strength. 
+ He has trained all his life to serve under Lord Martin. 
+ He would rather die standing in the light than live kneeling in the darkness.
+<----------------------------------------------------------------------------->
                 """)
                 player_health = Wilson_Slowfoot.hp
                 return Wilson_Slowfoot
@@ -27,11 +27,11 @@ def choose_player():
                 print("")
                 Zacke_Swiftfoot.print_info()
                 print("""
-                <---------------------------------------------------------------------------------->
-                 A younger knight of energetic nature and usually follows his own train of thought. 
-                 He is highly skilled but lacks discipline. 
-                 He rather strike first than get stricken. But he gets the job done.
-                <----------------------------------------------------------------------------------> 
+<---------------------------------------------------------------------------------->
+ A younger knight of energetic nature and usually follows his own train of thought. 
+ He is highly skilled but lacks discipline. 
+ He rather strike first than get stricken. But he gets the job done.
+<----------------------------------------------------------------------------------> 
                 """)
                 player_health = Zacke_Swiftfoot.hp
                 return Zacke_Swiftfoot
@@ -39,11 +39,11 @@ def choose_player():
                 print("")
                 Jacke_Bigfoot.print_info()
                 print("""
-                <-------------------------------------------------------------------------->
-                 One of Lord Martin's oldest and most devoted knights. 
-                 He might be of older statute but he is known to be able to take a beating. 
-                 But he doesn't shy away from handing out beatings either.
-                <-------------------------------------------------------------------------->
+<-------------------------------------------------------------------------->
+ One of Lord Martin's oldest and most devoted knights. 
+ He might be of older statute but he is known to be able to take a beating. 
+ But he doesn't shy away from handing out beatings either.
+<-------------------------------------------------------------------------->
                 """)
                 player_health = Jacke_Bigfoot.hp
                 return Jacke_Bigfoot
