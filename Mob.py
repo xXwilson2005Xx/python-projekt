@@ -34,7 +34,7 @@ Alvino = mobstats("Alvino", 55, 10, 9)
 Taxel = mobstats("Taxel", 40, 12, 8)
 Jewly = mobstats("Jewly", 60, 9, 10)
 Daffe_The_Destroyer = Boss_stats("Daffe The Destroyer", 65, 14, 12)
-Voiti_The_Fallen = Boss_stats("Voiti The Fallen", 75, 11, 14)
+Voiti_The_Fallen = Boss_stats("Voiti The Fallen", 75, 10, 14)
 
 MOBS = [PK,
 Boston,

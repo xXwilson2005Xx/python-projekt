@@ -26,7 +26,7 @@ def choose_player():
         except:
             print("Try again with a number\n")
 
-healthPotion = Item("Health Potion", 10)
+healthPotion = Item("Health Potion", 25)
 
 Inventory = [healthPotion]
 
@@ -50,6 +50,9 @@ def openInventory(player: playerstats):
         item_to_use = Inventory[item_to_take]
 
         player.hp += item_to_use.healing_power
+
+        if player.hp > player.maxhp:
+            player.hp = player.maxhp
 
         Inventory.pop(item_to_take)
 

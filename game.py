@@ -106,14 +106,15 @@ old_mob_armorclass = mob.armorclass
 #     A wild {biom}-{mob.name} appeared
 #     <------------------------------->
 #     """)
-
+old_mob_health = mob.hp
 for mobstats in MOBS:
+    mob.hp = old_mob_health
     mob = Random_mob()
     print(f"""
-    #     <------------------------------->
-    #     A wild {biom}-{mob.name} appeared
-    #     <------------------------------->
-    #     """)
+     <------------------------------->
+     A wild {biom}-{mob.name} appeared
+     <------------------------------->
+     """)
     while True:
         player.armorclass = old_player_armorclass
         mob.armorclass = old_mob_armorclass
@@ -136,6 +137,31 @@ for mobstats in MOBS:
     print("--------------------------")
     openInventory(player)
 
+boss = Random_boss()
+old_boss_armorclass = boss.armorclass
+
+while True:
+    player.armorclass = old_player_armorclass
+    boss.armorclass = old_boss_armorclass
+    playerchoice = player_choice(player)
+    print(f"{biom}-{boss.name} chooses to...")
+    bosschoice = boss_choice(boss)
+    bossaction(player, boss, bosschoice)
+    player_combat_boss(player, boss, playerchoice)
+    if boss.hp <= 0:
+        print("""
+        Boss DÖD!
+        """)
+        break
+    if player.hp <= 0:
+        print("""
+        Du är död
+        """)
+        break
+
+mob_drop_item()
+print("--------------------------")
+openInventory(player)
 #     print("")
 #     print("King e du monstret är DÖD! \n") 
 
