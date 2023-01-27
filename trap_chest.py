@@ -1,6 +1,15 @@
 from playerstats import*
 from Choose_player import*
 
+def trap_or_chestroom(player: playerstats):
+    import random as rand
+    trap_chestroom = rand.randint(1, 2)
+    if trap_chestroom == 1:
+        trap(player)
+    elif trap_chestroom == 2:
+        chestroom()
+
+
 def trap(player: playerstats):
     import random as rand
     trapdamage = rand.randint(1,5)
@@ -24,7 +33,7 @@ def trap(player: playerstats):
 <---------------------------------------------------------------->
          """)
 
-def chest_rum():
+def chestroom():
     import random as rand
     chest_roomtyp = rand.randint(1,3)
     if chest_roomtyp == 1:

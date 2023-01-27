@@ -30,9 +30,8 @@ while True:
     old_player_armorclass = player.armorclass
     old_mob_armorclass = mob.armorclass
 
-    chest_rum()
+    trap_or_chestroom(player)
 
-    trap(player)
     old_mob_health = mob.hp
     for mobstats in MOBS:
         mob.hp = old_mob_health

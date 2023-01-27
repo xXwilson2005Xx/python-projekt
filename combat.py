@@ -42,6 +42,7 @@ def player_choice(player: playerstats):
         print("<------------------------------------------------------------->")
         print("\n You chossed to Defend! \n")
         player.armorclass = player.armorclass + 1
+    return playerchoice
 
 # player_comabat_mob utför skadan på monstret om playern valde att attackera
 def player_combat_mob(player: playerstats, mob: mobstats, playerchoice):
