@@ -2,6 +2,7 @@ import random as rand
 from Mob import*
 from playerstats import*
 
+# Mob_choice är funktionen som bestämmer om monstret attackerar eller försvarar
 def Mob_choice(mob: mobstats):
     import random as rand
     mobchoice = rand.randint(1, 2)
@@ -14,7 +15,7 @@ def Mob_choice(mob: mobstats):
         mob.armorclass = mob.armorclass + 1
     return mobchoice
 
-
+# mobaction utför all skada på spelaren beroende på om monstret valde att attackera
 def mobaction(player: playerstats, mob: mobstats, mobchoice):
     if mobchoice == 1:
         print("")
@@ -31,7 +32,7 @@ def mobaction(player: playerstats, mob: mobstats, mobchoice):
         print("")
     return mobchoice
 
-
+# player_choice är funktionen som låter oss bestämma om vi vill attackera eller försvara
 def player_choice(player: playerstats):
     playerchoice = int(input("Do you want to Attack or Defend? 1:Attack 2:Defend: "))
     if playerchoice == 1:
@@ -42,6 +43,7 @@ def player_choice(player: playerstats):
         print("\n You chossed to Defend! \n")
         player.armorclass = player.armorclass + 1
 
+# player_comabat_mob utför skadan på monstret om playern valde att attackera
 def player_combat_mob(player: playerstats, mob: mobstats, playerchoice):
     if playerchoice == 1:
         print("")
@@ -60,7 +62,7 @@ def player_combat_mob(player: playerstats, mob: mobstats, playerchoice):
         print("<------------------------------------------------------------->")
     return playerchoice
     
-
+# player_comabat_boss utför skadan på bossen om playern valde att attackera
 def player_combat_boss(player: playerstats, boss: Boss_stats, playerchoice):
     if playerchoice == 1:
         print("")
@@ -79,6 +81,7 @@ def player_combat_boss(player: playerstats, boss: Boss_stats, playerchoice):
         print("<------------------------------------------------------------->")
     return playerchoice
 
+# boss_choice är funktionen som bestämmer om bossen attackerar eller försvarar
 def boss_choice(boss: Boss_stats):
     import random as rand
     bosschoice = rand.randint(1, 2)
@@ -91,7 +94,7 @@ def boss_choice(boss: Boss_stats):
         boss.armorclass = boss.armorclass + 1
     return bosschoice
 
-
+# mobaction utför all skada på spelaren beroende på om monstret valde att attackera
 def bossaction(player: playerstats, boss: Boss_stats, bosschoice):
     if bosschoice == 1:
         print(" Boss Attack!")
