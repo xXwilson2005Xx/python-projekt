@@ -76,6 +76,7 @@ while True:
     while True:
         player.armorclass = old_player_armorclass
         boss.armorclass = old_boss_armorclass
+        player_choice(player)
         playerchoice = player_choice(player)
         print(f"{biom}-{boss.name} chooses to...")
         bosschoice = boss_choice(boss)
