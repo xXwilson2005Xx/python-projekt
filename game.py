@@ -101,3 +101,4 @@ while True:
     print("")
     print("You defeated the evil of this world, now you continue on your adventure to save Lord Martin")
     print("")
+    print("Choose a new biom and start a new adventure!")

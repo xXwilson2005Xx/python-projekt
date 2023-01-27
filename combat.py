@@ -37,10 +37,10 @@ def player_choice(player: playerstats):
     playerchoice = int(input("Do you want to Attack or Defend? 1:Attack 2:Defend: "))
     if playerchoice == 1:
         print("<------------------------------------------------------------->")
-        print("\n You chossed to Attack! \n")
+        print("\n You choosed to Attack! \n")
     elif playerchoice == 2:
         print("<------------------------------------------------------------->")
-        print("\n You chossed to Defend! \n")
+        print("\n You choosed to Defend! \n")
         player.armorclass = player.armorclass + 1
     return playerchoice
 
