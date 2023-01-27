@@ -2,7 +2,7 @@ from art import*
 from Mob import*
 from biom import*
 from playerstats import*
-from health_damage import*
+from trap_chest import*
 from Start_game import*
 from Choose_player import*
 from combat import*
