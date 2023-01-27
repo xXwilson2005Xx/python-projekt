@@ -98,7 +98,14 @@ while True:
     mob_drop_item()
     print("--------------------------")
     openInventory(player)
-    print("")
-    print("You defeated the evil of this world, now you continue on your adventure to save Lord Martin")
-    print("")
-    print("Choose a new biom and start a new adventure!")
+    print("""
+    
+    <------------------------------------------------------------------------------------------->
+     You defeated the evil of this world, now you continue on your adventure to save Lord Martin
+    <------------------------------------------------------------------------------------------->
+    """)
+    print("""
+    <-------------------------------------------->
+     Choose a new biom and start a new adventure!
+    <-------------------------------------------->
+    """)

@@ -3,8 +3,9 @@ from Choose_player import*
 
 # den här funktionen slumpar mellan funktionerna trap och chestroom
 def trap_or_chestroom(player: playerstats):
-    import random as rand
-    trap_chestroom = rand.randint(1, 2)
+    print("<--------------------->")
+    trap_chestroom = int(input("Choose door, 1 or 2: "))
+    print("<--------------------->")
     if trap_chestroom == 1:
         trap(player)
     elif trap_chestroom == 2:

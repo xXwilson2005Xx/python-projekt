@@ -7,6 +7,7 @@ class Item:
 
 healthPotion = Item("Health Potion", 30)
 
+# Startlista för inventory som sedan ökas med healthpostions under spelets gång
 Inventory = [healthPotion]
 
 player_health = 0
