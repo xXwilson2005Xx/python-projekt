@@ -56,14 +56,14 @@ def chestroom():
         """)
         
         for item in Inventory:
-            print("Inventory\n", item.item_name)
+            print("Inventory\n", item.item_name,"healingpower",item.healing_power)
         print("1 to take potion: 2 to leave potion")
         take_Item = int(input("-> "))
         if take_Item == 1:
             Inventory.append(healthPotion)
     
         for item in Inventory:
-            print(item.item_name)
+            print(item.item_name,"healingpower",item.healing_power)
         print("<------------------------------------------------------------------------------------>")
 
 
@@ -76,13 +76,13 @@ def chestroom():
         """)
         
         for item in Inventory:
-            print("Inventory\n", item.item_name)
+            print("Inventory\n", item.item_name,"healingpower",item.healing_power)
         print("1 to take the two potions: 2 to leave potions")
         take_Item = int(input("-> "))
         if take_Item == 1:
             (Inventory.append(healthPotion))
             (Inventory.append(healthPotion))
             for item in Inventory:
-                print(item.item_name)
+                print(item.item_name,"healingpower",item.healing_power)
             print("<------------------------------------------------------------------------------------------------------>")
         

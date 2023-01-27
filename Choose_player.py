@@ -59,7 +59,7 @@ def choose_player():
 def openInventory(player: playerstats):
     print(player.hp)
     for item in Inventory:
-        print(item.item_name)
+        print(item.item_name,"healingpower",item.healing_power)
 
     print("1: use item, 2: exit inventory")
 
@@ -81,7 +81,7 @@ def openInventory(player: playerstats):
         Inventory.pop(item_to_take)
 
         for item in Inventory:
-            print(item.item_name)
+            print(item.item_name,"healingpower",item.healing_power)
         print(player.hp)
         
     elif inventory_choice == 2:
