@@ -1,6 +1,6 @@
 def biomer():
     try:
-        print(""""
+        print("""
 
         <------------->
          1.Mountain,N 
