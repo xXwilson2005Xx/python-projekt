@@ -3,6 +3,7 @@ from playerstats import*
 import random as rand
 from Choose_player import*
 
+# Denna klass ger alla monster stats alltså, namn, hp, styrka och armorclass
 class mobstats():
 
     def __init__(self, name_in, hp_in, strength_in, armorclass_in):
@@ -37,6 +38,7 @@ Daffe_The_Destroyer = Boss_stats("Daffe The Destroyer", 65, 14, 12)
 Voiti_The_Fallen = Boss_stats("Voiti The Fallen", 75, 11, 14)
 Ron_The_Brittle = Boss_stats("Ron The Brittle", 1, 30, 18)
 
+# Detta är 2 listor en för alla MOBS och en för alla Bossar
 MOBS = [PK,
 Boston,
 Bromis,
@@ -47,6 +49,7 @@ Jewly]
 BOSS = [Daffe_The_Destroyer,
 Voiti_The_Fallen, Ron_The_Brittle]
 
+# Denna funktion slumpar fram ett monster från listan MOBS
 def Random_mob():
     import random as rand
     mob_spawn = rand.choice(MOBS)
@@ -54,11 +57,13 @@ def Random_mob():
 
 Random_mob()
 
+# Denna funktion slumpar fram en Boss från listan BOSS
 def Random_boss():
     import random as rand
     boss_spawn = rand.choice(BOSS)
     return boss_spawn
 
+# Den här funktionen dropar en healingpotion varje gång man dödar ett monster eller boss
 def mob_drop_item():
     for item in Inventory:
         print(item.item_name)

@@ -1,3 +1,4 @@
+# Denna funktion frågar om man vill starta spelet eller inte, om du väljer nej så startar den spelet ändå och berättar sedan en liten backstory
 def Start_game():
     try:
         Start_the_game = int(input("Start game! 1.YES or 2.NO: "))

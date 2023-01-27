@@ -1,11 +1,16 @@
 from playerstats import*
-
+# den här klassen är för vår healing posion, den ger ut namnet och även hur mycket den ska heala
 class Item:
     def __init__(self, item_name, healing_power):
         self.item_name = item_name
         self.healing_power = healing_power
 
+healthPotion = Item("Health Potion", 30)
+
+Inventory = [healthPotion]
+
 player_health = 0
+# denna funktion gör så att du kan välja vilken karaktär su vill spela med och berättar även en backstory om karaktären
 def choose_player():
     global player_health
     while True:
@@ -50,12 +55,7 @@ def choose_player():
         except:
             print("Try again with a number\n")
 
-healthPotion = Item("Health Potion", 30)
-
-Inventory = [healthPotion]
-
-
-
+# den här funktione öppnar spelarens inventory som visar vad personen har i inventoryt och sen om den vill använda nånting från inventoryt
 def openInventory(player: playerstats):
     print(player.hp)
     for item in Inventory:

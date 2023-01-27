@@ -1,6 +1,7 @@
 from playerstats import*
 from Choose_player import*
 
+# den här funktionen slumpar mellan funktionerna trap och chestroom
 def trap_or_chestroom(player: playerstats):
     import random as rand
     trap_chestroom = rand.randint(1, 2)
@@ -9,7 +10,7 @@ def trap_or_chestroom(player: playerstats):
     elif trap_chestroom == 2:
         chestroom()
 
-
+# denna funktion slumpar mellan 3 fällor som du kan ta damage av
 def trap(player: playerstats):
     import random as rand
     trapdamage = rand.randint(1,5)
@@ -33,6 +34,7 @@ def trap(player: playerstats):
 <---------------------------------------------------------------->
          """)
 
+# denna funktion slumpar mellan 3 kistrum som ger dig olika saker
 def chestroom():
     import random as rand
     chest_roomtyp = rand.randint(1,3)

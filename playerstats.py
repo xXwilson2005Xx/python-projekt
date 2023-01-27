@@ -1,3 +1,5 @@
+
+#  Den här klassen ger alla players stats alltså, namn, hp, maxhp, styrka och armorclass
 class playerstats():
 
     def __init__(self, name_in, hp_in, maxhp_in, strength_in, armorclass_in):

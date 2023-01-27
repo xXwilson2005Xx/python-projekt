@@ -1,3 +1,4 @@
+# den här funktionen ger dig möjlighet att välja vilken biom du vill spela spelet i
 def biomer():
     try:
         print("""

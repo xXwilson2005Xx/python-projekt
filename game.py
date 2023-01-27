@@ -68,6 +68,7 @@ while True:
         mob_drop_item()
         print("--------------------------")
         openInventory(player)
+        trap_or_chestroom(player)
 
     boss = Random_boss()
     old_boss_armorclass = boss.armorclass
