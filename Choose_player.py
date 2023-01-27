@@ -12,21 +12,24 @@ def choose_player():
         try:
             player = int(input("Choose a player: "))
             if player == 1:
+                print("")
                 Wilson_Slowfoot.print_info()
                 player_health = Wilson_Slowfoot.hp
                 return Wilson_Slowfoot
             elif player == 2:
+                print("")
                 Zacke_Swiftfoot.print_info()
                 player_health = Zacke_Swiftfoot.hp
                 return Zacke_Swiftfoot
             elif player == 3:
+                print("")
                 Jacke_Bigfoot.print_info()
                 player_health = Jacke_Bigfoot.hp
                 return Jacke_Bigfoot
         except:
             print("Try again with a number\n")
 
-healthPotion = Item("Health Potion", 25)
+healthPotion = Item("Health Potion", 55)
 
 Inventory = [healthPotion]
 

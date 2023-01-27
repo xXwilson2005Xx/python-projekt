@@ -1,6 +1,14 @@
 def biomer():
     try:
-        print("1.Mountain,N \n2.Desert,S \n3.Jungle,E \n4.Plains,W")
+        print(""""
+
+        <------------->
+         1.Mountain,N 
+         2.Desert,S 
+         3.Jungle,E 
+         4.Plains,W
+        <------------->
+        """)
         choosebiom=int(input("\nChoose a diraction(number): "))
         if choosebiom == 1:
             biom = "Mountains"
